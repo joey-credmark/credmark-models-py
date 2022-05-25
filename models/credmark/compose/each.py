@@ -1,12 +1,11 @@
 from credmark.cmf.model import Model
 from credmark.cmf.types import ComposeEachInputDto, ComposeEachOutputDto
-from credmark.dto import IterableListGenericDTO
 
 @Model.describe(
     slug="compose.each",
     version="1.0",
-    display_name="Account Portfolios for a list of Accounts",
-    description="All of the token holdings for an account",
+    display_name="Compose Each",
+    description="Run a Model on a list of inputs",
     developer="Credmark",
     input=ComposeEachInputDto,
     output=ComposeEachOutputDto)
